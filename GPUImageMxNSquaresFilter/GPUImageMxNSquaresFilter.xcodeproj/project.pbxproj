@@ -20,6 +20,9 @@
 		3C194E3222C4B39400AB3277 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C194E3122C4B39400AB3277 /* ViewController3.m */; };
 		3C194E3522C4B39A00AB3277 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C194E3422C4B39A00AB3277 /* ViewController4.m */; };
 		3C194E3A22C4C4C700AB3277 /* GPUImageMagnifierFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C194E3922C4C4C700AB3277 /* GPUImageMagnifierFilter.m */; };
+		3CEF6C4622CAF6E10009F129 /* GPUImagePIPFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF6C4522CAF6E10009F129 /* GPUImagePIPFilter.m */; };
+		3CEF6C4922CAFAA60009F129 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF6C4822CAFAA60009F129 /* ViewController5.m */; };
+		3CEF6C4B22CAFB910009F129 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF6C4A22CAFB910009F129 /* video.mp4 */; };
 		41F38608C79C6391B8DC0384 /* libPods-GPUImageMxNSquaresFilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC4B61C58499D13123D712E /* libPods-GPUImageMxNSquaresFilter.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,11 @@
 		3C194E3422C4B39A00AB3277 /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
 		3C194E3822C4C4C700AB3277 /* GPUImageMagnifierFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageMagnifierFilter.h; sourceTree = "<group>"; };
 		3C194E3922C4C4C700AB3277 /* GPUImageMagnifierFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageMagnifierFilter.m; sourceTree = "<group>"; };
+		3CEF6C4422CAF6E10009F129 /* GPUImagePIPFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImagePIPFilter.h; sourceTree = "<group>"; };
+		3CEF6C4522CAF6E10009F129 /* GPUImagePIPFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImagePIPFilter.m; sourceTree = "<group>"; };
+		3CEF6C4722CAFAA60009F129 /* ViewController5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
+		3CEF6C4822CAFAA60009F129 /* ViewController5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
+		3CEF6C4A22CAFB910009F129 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		827E8BC4098521326E7EE395 /* Pods-GPUImageMxNSquaresFilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageMxNSquaresFilter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageMxNSquaresFilter/Pods-GPUImageMxNSquaresFilter.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC4B61C58499D13123D712E /* libPods-GPUImageMxNSquaresFilter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUImageMxNSquaresFilter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63F953296559B5F28E02341 /* Pods-GPUImageMxNSquaresFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageMxNSquaresFilter.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageMxNSquaresFilter/Pods-GPUImageMxNSquaresFilter.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 		3C194E0722C4AA0C00AB3277 /* GPUImageMxNSquaresFilter */ = {
 			isa = PBXGroup;
 			children = (
+				3CEF6C4322CAF6B80009F129 /* GPUImagePIPFilter */,
 				3C194E1E22C4AA7C00AB3277 /* GPUImageMxNSquaresFilter */,
 				3C194E2222C4AA9600AB3277 /* GPUImage2x2FourSquaresFilter */,
 				3C194E2622C4AABB00AB3277 /* GPUImage3x3NineSquaresFilter */,
@@ -100,6 +109,9 @@
 				3C194E3122C4B39400AB3277 /* ViewController3.m */,
 				3C194E3322C4B39A00AB3277 /* ViewController4.h */,
 				3C194E3422C4B39A00AB3277 /* ViewController4.m */,
+				3CEF6C4722CAFAA60009F129 /* ViewController5.h */,
+				3CEF6C4822CAFAA60009F129 /* ViewController5.m */,
+				3CEF6C4A22CAFB910009F129 /* video.mp4 */,
 				3C194E0E22C4AA0C00AB3277 /* Main.storyboard */,
 				3C194E1122C4AA0C00AB3277 /* Assets.xcassets */,
 				3C194E1322C4AA0C00AB3277 /* LaunchScreen.storyboard */,
@@ -143,6 +155,16 @@
 				3C194E3922C4C4C700AB3277 /* GPUImageMagnifierFilter.m */,
 			);
 			path = GPUImageMagnifierFilter;
+			sourceTree = "<group>";
+		};
+		3CEF6C4322CAF6B80009F129 /* GPUImagePIPFilter */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF6C4422CAF6E10009F129 /* GPUImagePIPFilter.h */,
+				3CEF6C4522CAF6E10009F129 /* GPUImagePIPFilter.m */,
+			);
+			name = GPUImagePIPFilter;
+			path = GPUImageMagnifierFilter/GPUImagePIPFilter;
 			sourceTree = "<group>";
 		};
 		64FD80B20CCCA151DB6F5D0F /* Frameworks */ = {
@@ -224,6 +246,7 @@
 				3C194E1522C4AA0C00AB3277 /* LaunchScreen.storyboard in Resources */,
 				3C194E1222C4AA0C00AB3277 /* Assets.xcassets in Resources */,
 				3C194E1022C4AA0C00AB3277 /* Main.storyboard in Resources */,
+				3CEF6C4B22CAFB910009F129 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +312,8 @@
 				3C194E2522C4AAB700AB3277 /* GPUImage2x2FourSquaresFilter.m in Sources */,
 				3C194E1822C4AA0C00AB3277 /* main.m in Sources */,
 				3C194E3222C4B39400AB3277 /* ViewController3.m in Sources */,
+				3CEF6C4922CAFAA60009F129 /* ViewController5.m in Sources */,
+				3CEF6C4622CAF6E10009F129 /* GPUImagePIPFilter.m in Sources */,
 				3C194E0A22C4AA0C00AB3277 /* AppDelegate.m in Sources */,
 				3C194E3522C4B39A00AB3277 /* ViewController4.m in Sources */,
 			);

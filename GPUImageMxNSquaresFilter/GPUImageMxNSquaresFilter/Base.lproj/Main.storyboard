@@ -129,6 +129,33 @@
                                             <segue destination="5ti-If-Exv" kind="push" id="mte-8c-9Na"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="M8x-jB-Pyr" detailTextLabel="luJ-ci-J47" style="IBUITableViewCellStyleSubtitle" id="NNo-QG-nV1">
+                                        <rect key="frame" x="0.0" y="211" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NNo-QG-nV1" id="EI9-Eb-q0J">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="GPUImagePIPFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M8x-jB-Pyr">
+                                                    <rect key="frame" x="20" y="5" width="145" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="画中画效果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="luJ-ci-J47">
+                                                    <rect key="frame" x="20" y="25.5" width="61.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wWm-GW-YsU" kind="push" id="X6z-lC-9xq"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -325,7 +352,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkx-7s-uYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="1384"/>
+            <point key="canvasLocation" x="1251" y="1450"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="Xaj-W0-8BJ">
+            <objects>
+                <viewController id="wWm-GW-YsU" customClass="ViewController5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nX2-IW-rnl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbw-Fr-L7y" customClass="GPUImageView">
+                                <rect key="frame" x="20" y="108" width="374" height="210.5"/>
+                                <color key="backgroundColor" red="0.90295530869999996" green="1" blue="0.93366063180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mbw-Fr-L7y" secondAttribute="height" multiplier="128:72" id="S54-8d-EMW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mbw-Fr-L7y" firstAttribute="top" secondItem="LrV-CT-eLw" secondAttribute="top" constant="20" id="0Do-8O-eoq"/>
+                            <constraint firstItem="mbw-Fr-L7y" firstAttribute="leading" secondItem="LrV-CT-eLw" secondAttribute="leading" constant="20" id="3WM-Ba-sHx"/>
+                            <constraint firstItem="LrV-CT-eLw" firstAttribute="trailing" secondItem="mbw-Fr-L7y" secondAttribute="trailing" constant="20" id="qwF-k5-mGW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LrV-CT-eLw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d0K-RW-TsT"/>
+                    <connections>
+                        <outlet property="cameraView" destination="mbw-Fr-L7y" id="dh9-p6-3gq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZZ-pi-ceY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="1606"/>
         </scene>
     </scenes>
     <resources>

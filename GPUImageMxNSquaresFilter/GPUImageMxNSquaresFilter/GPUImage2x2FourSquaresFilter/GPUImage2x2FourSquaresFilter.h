@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  * 本滤镜能够实现将画面切分成 2 x 2 个方格, 画面在每个方格中能够完全显示, 四宫格效果
  *
+ * github: https://github.com/CoderYQ/GPUImageMxNSquaresFilter
  * @author CoderYQ
  * @createdAt 06/27/2019
  * QQ 13048976253
