@@ -24,7 +24,7 @@ NSString *const kGPUImageMagnifierFragmentShaderString = SHADER_STRING
      highp vec2 textureCoordinateToUse = textureCoordinate;
      highp float dist = distance(center, textureCoordinate);
      
-     if (dist < radius && factor > 0.0) {
+     if (factor > 0.0 && dist < radius) {
          textureCoordinateToUse -= center;
          textureCoordinateToUse = textureCoordinateToUse / factor;
          textureCoordinateToUse += center;

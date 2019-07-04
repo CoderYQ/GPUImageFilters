@@ -16,17 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
  
  * 本滤镜能够实现画面中的局部放大或缩小效果, 类似于放大镜
  *
+ * github: https://github.com/CoderYQ/GPUImageFilters
  * @author CoderYQ
  * @createdAt 06/27/2019
  * QQ 13048976253
  */
 
-
 extern NSString *const kGPUImageMagnifierFragmentShaderString;
 
 @interface GPUImageMagnifierFilter : GPUImageFilter
 {
-    GLint imageSizeUniform, centerUniform, radiusUniform, factorUniform;
+    GLint centerUniform, radiusUniform, factorUniform;
 }
 
 /**
