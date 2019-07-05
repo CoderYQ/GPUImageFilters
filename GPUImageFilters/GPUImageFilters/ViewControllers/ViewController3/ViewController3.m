@@ -30,14 +30,12 @@
     
     //摄像
     self.filter1 = [[GPUImageMagnifierFilter alloc] init];
-    self.filter2.aspectRatio = 1270 / 720.0;
     self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition:AVCaptureDevicePositionBack];
     [self.videoCamera addTarget:self.filter1];
     [self.filter1 addTarget:self.cameraView];
     
     //图片
     self.filter2 = [[GPUImageMagnifierFilter alloc] init];
-    self.filter2.aspectRatio = 1.0;
     [self.filter2 forceProcessingAtSize:self.imageView.bounds.size];
     [self.filter2 useNextFrameForImageCapture];
     UIImage *image = [UIImage imageNamed:@"icon"];

@@ -15,6 +15,7 @@
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageMovie *movieFile;
 @property (weak, nonatomic) IBOutlet GPUImageView *cameraView;
+@property (nonatomic, strong) GPUImagePIPFilter *filter;
 
 @end
 
@@ -26,11 +27,11 @@
     self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition:AVCaptureDevicePositionBack];
     
     GPUImagePIPFilter *filter = [[GPUImagePIPFilter alloc] init];
+    self.filter = filter;
     
     NSURL *sampleURL = [[NSBundle mainBundle] URLForResource:@"video" withExtension:@"mp4"];
     AVAsset *asset = [AVAsset assetWithURL:sampleURL];
     self.movieFile = [[GPUImageMovie alloc] initWithAsset:asset];
-    self.movieFile.runBenchmark = YES;
     self.movieFile.playAtActualSpeed = YES;
     
     [self.videoCamera addTarget:filter];
@@ -44,4 +45,5 @@
     [self.videoCamera startCameraCapture];
     [self.movieFile startProcessing];
 }
+
 @end
